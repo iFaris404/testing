@@ -1,0 +1,78 @@
+body {
+  background-color: gray;
+}
+
+.click_box {
+  width: 50%;
+  height: 10rem;
+  line-height: 10rem;
+  background-color: rgb(45, 45, 45);
+  margin-left: 25%;
+  border: 0.15rem solid rgb(187, 187, 187);
+  font-size: 5rem;
+  text-align: center;
+  vertical-align: center;
+  letter-spacing: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  color: white;
+}
+.buttons_box {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10rem;
+}
+
+.click_button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  width: 20rem;
+  font-size: 14px;
+  padding: 0 12px;
+  line-height: 20px;
+  height: 30px;
+  max-height: 30px;
+  background: #566ae5;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0;
+  color: #ffffff;
+  transition-timing-function: ease-in-out;
+  transition-property: box-shadow, background-color;
+  transition-duration: 300ms;
+  justify-self: end;
+  grid-column: 1;
+  grid-row: 1;
+}
+.click_button:hover,
+.reset_button:hover {
+  box-shadow: 0 2px 2px rgb(39 44 52 / 12%);
+  color: red;
+  background-color: rgb(78, 78, 164);
+  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+}
+.reset_button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 12px;
+  line-height: 20px;
+  height: 30px;
+  max-height: 30px;
+  background: #566ae5;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0;
+  color: #ffffff;
+  transition-timing-function: ease-in-out;
+  transition-property: box-shadow, background-color;
+  transition-duration: 300ms;
+  width: 20rem;
+  justify-self: start;
+  grid-column: 2;
+}
